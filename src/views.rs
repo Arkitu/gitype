@@ -336,7 +336,6 @@ fn line<'a>(
                     Style::default()
                         .bg(Color::Red)
                         .fg(Color::White)
-                        .add_modifier(Modifier::SLOW_BLINK),
                 )
             } else {
                 Span::styled(
@@ -347,7 +346,6 @@ fn line<'a>(
                         .bg(Color::Green)
                         .fg(Color::White)
                         .add_modifier(Modifier::BOLD)
-                        .add_modifier(Modifier::SLOW_BLINK),
                 )
             };
             let rest = Span::styled(
